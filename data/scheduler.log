@@ -6,3 +6,7 @@ Traceback (most recent call last):
   File "F:\project\Redbus\scraper.py", line 15, in <module>
     import requests
 ModuleNotFoundError: No module named 'requests'
+Traceback (most recent call last):
+  File "F:\project\Redbus\scraper.py", line 15, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
