@@ -1,0 +1,83 @@
+2026-03-07 03:51:56,568 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-07 03:51:57,367 [WARNING] Route not currently available on site: Pune -> Mumbai
+2026-03-07 03:51:57,367 [WARNING] Route not currently available on site: Mumbai -> Pune
+2026-03-07 03:51:57,367 [INFO] Scraping Pune -> Jalgaon | 08-03-2026
+2026-03-07 03:51:57,483 [INFO] Pune->Jalgaon: found 7 fare records
+2026-03-07 03:51:57,498 [INFO] Waiting 9.7s...
+2026-03-07 03:52:07,200 [INFO] Scraping Pune -> Jalgaon | 09-03-2026
+2026-03-07 03:52:07,295 [INFO] Pune->Jalgaon: found 7 fare records
+2026-03-07 03:52:07,295 [INFO] Waiting 8.7s...
+2026-03-07 03:52:15,969 [INFO] Scraping Jalgaon -> Pune | 08-03-2026
+2026-03-07 03:52:16,054 [INFO] Jalgaon->Pune: found 7 fare records
+2026-03-07 03:52:16,054 [INFO] Waiting 9.4s...
+2026-03-07 03:52:25,460 [INFO] Scraping Jalgaon -> Pune | 09-03-2026
+2026-03-07 03:52:26,992 [INFO] Jalgaon->Pune: found 7 fare records
+2026-03-07 03:52:26,992 [INFO] Waiting 8.2s...
+2026-03-07 03:52:35,203 [INFO] Scraping Pune -> Malkapur | 08-03-2026
+2026-03-07 03:52:36,018 [INFO] Pune->Malkapur: found 6 fare records
+2026-03-07 03:52:36,018 [INFO] Waiting 8.3s...
+2026-03-07 03:52:44,329 [INFO] Scraping Pune -> Malkapur | 09-03-2026
+2026-03-07 03:52:44,493 [INFO] Pune->Malkapur: found 6 fare records
+2026-03-07 03:52:44,493 [INFO] Waiting 13.4s...
+2026-03-07 03:52:58,032 [INFO] Saved 40 records to DB
+2026-03-07 03:52:58,047 [INFO] Total records saved: 40
+2026-03-07 03:58:28,193 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-07 03:58:28,942 [INFO] Scraping Pune -> Jalgaon | 08-03-2026
+2026-03-07 03:58:29,743 [INFO] Found 7 buses for Pune->Jalgaon on 08-03-2026
+2026-03-07 03:58:29,993 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper BHARAT BENZ  Via New sangavi Dhule | Seats captured: 40
+2026-03-07 03:58:31,261 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHOSARI VAI Chalisgaon | Seats captured: 48
+2026-03-07 03:58:32,005 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper Bharat Benz Sangamwadi Via Dhule,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 03:58:32,945 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHARTH BENZ WARJE KOTHRUD Via CHAKAN DHULE, Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 03:58:34,455 [INFO] Bus: Pune To Jalgaon 2X1 AC Sleeper Bharat Benz Bhosari Sangvi Via Pahur,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 03:58:35,424 [INFO] Bus: PUNE TO JALGAON 2X1 NON AC SLEEPER(With Washroom)Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 03:58:36,405 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER (With Washroom) Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 03:58:43,766 [INFO] Saved 328 seat records
+2026-03-07 03:58:43,766 [INFO] Total seat rows saved: 328
+2026-03-07 15:15:28,030 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-07 15:15:29,295 [INFO] Scraping Pune -> Jalgaon | 08-03-2026
+2026-03-07 15:15:30,507 [INFO] Found 7 buses for Pune->Jalgaon on 08-03-2026
+2026-03-07 15:15:30,789 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper BHARAT BENZ  Via New sangavi Dhule | Seats captured: 40
+2026-03-07 15:15:31,590 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHOSARI VAI Chalisgaon | Seats captured: 48
+2026-03-07 15:15:32,778 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper Bharat Benz Sangamwadi Via Dhule,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 15:15:33,532 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHARTH BENZ WARJE KOTHRUD Via CHAKAN DHULE, Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 15:15:34,657 [INFO] Bus: Pune To Jalgaon 2X1 AC Sleeper Bharat Benz Bhosari Sangvi Via Pahur,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 15:15:36,112 [INFO] Bus: PUNE TO JALGAON 2X1 NON AC SLEEPER(With Washroom)Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 15:15:37,503 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER (With Washroom) Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 15:15:44,236 [INFO] Saved 328 seat records
+2026-03-07 15:15:44,237 [INFO] Total seat rows saved: 328
+2026-03-07 19:10:22,116 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-07 19:10:23,168 [INFO] Scraping Pune -> Jalgaon | 08-03-2026
+2026-03-07 19:10:23,973 [INFO] Found 7 buses for Pune->Jalgaon on 08-03-2026
+2026-03-07 19:10:24,019 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper BHARAT BENZ  Via New sangavi Dhule | Seats captured: 40
+2026-03-07 19:10:25,584 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHOSARI VAI Chalisgaon | Seats captured: 48
+2026-03-07 19:10:27,220 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper Bharat Benz Sangamwadi Via Dhule,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 19:10:28,284 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHARTH BENZ WARJE KOTHRUD Via CHAKAN DHULE, Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 19:10:29,744 [INFO] Bus: Pune To Jalgaon 2X1 AC Sleeper Bharat Benz Bhosari Sangvi Via Pahur,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-07 19:10:31,286 [INFO] Bus: PUNE TO JALGAON 2X1 NON AC SLEEPER(With Washroom)Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 19:10:32,327 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER (With Washroom) Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-07 19:10:40,117 [INFO] Saved 328 seat records
+2026-03-07 19:10:40,117 [INFO] Total seat rows saved: 328
+2026-03-08 01:00:37,723 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-08 01:00:39,017 [INFO] Scraping Pune -> Jalgaon | 09-03-2026
+2026-03-08 01:00:39,817 [INFO] Found 7 buses for Pune->Jalgaon on 09-03-2026
+2026-03-08 01:00:39,951 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper BHARAT BENZ  Via New sangavi Dhule | Seats captured: 40
+2026-03-08 01:00:41,037 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHOSARI VAI Chalisgaon | Seats captured: 48
+2026-03-08 01:00:41,993 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper Bharat Benz Sangamwadi Via Dhule,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:00:43,464 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHARTH BENZ WARJE KOTHRUD Via CHAKAN DHULE, Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:00:44,888 [INFO] Bus: Pune To Jalgaon 2X1 AC Sleeper Bharat Benz Bhosari Sangvi Via Pahur,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:00:46,079 [INFO] Bus: PUNE TO JALGAON 2X1 NON AC SLEEPER(With Washroom)Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-08 01:00:47,344 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER (With Washroom) Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-08 01:00:56,044 [INFO] Saved 328 seat records
+2026-03-08 01:00:56,045 [INFO] Total seat rows saved: 328
+2026-03-08 01:24:42,070 [INFO] DB ready at F:\project\Redbus\data\fares.db
+2026-03-08 01:24:45,055 [INFO] Scraping Pune -> Jalgaon | 09-03-2026
+2026-03-08 01:24:45,971 [INFO] Found 7 buses for Pune->Jalgaon on 09-03-2026
+2026-03-08 01:24:46,002 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper BHARAT BENZ  Via New sangavi Dhule | Seats captured: 40
+2026-03-08 01:24:47,731 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHOSARI VAI Chalisgaon | Seats captured: 48
+2026-03-08 01:24:48,980 [INFO] Bus: Pune To Jalgaon 2 X 1 AC Sleeper Bharat Benz Sangamwadi Via Dhule,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:24:50,513 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER BHARTH BENZ WARJE KOTHRUD Via CHAKAN DHULE, Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:24:51,630 [INFO] Bus: Pune To Jalgaon 2X1 AC Sleeper Bharat Benz Bhosari Sangvi Via Pahur,Shri Sairam Travels Benz | Seats captured: 48
+2026-03-08 01:24:52,657 [INFO] Bus: PUNE TO JALGAON 2X1 NON AC SLEEPER(With Washroom)Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-08 01:24:54,077 [INFO] Bus: PUNE TO JALGAON 2X1 AC SLEEPER (With Washroom) Bhosari Via Sambhajinagar | Seats captured: 48
+2026-03-08 01:25:01,241 [INFO] Saved 328 seat records
+2026-03-08 01:25:01,241 [INFO] Total seat rows saved: 328
