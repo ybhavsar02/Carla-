@@ -44,6 +44,24 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 
+def _format_scraped_fields(raw_scraped_at: str) -> tuple[str, str, str] | None:
+    if not raw_scraped_at:
+        return None
+    try:
+        dt = datetime.fromisoformat(str(raw_scraped_at).strip())
+    except ValueError:
+        return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=IST_TZ)
+    else:
+        dt = dt.astimezone(IST_TZ)
+    return (
+        dt.strftime("%Y-%m-%d"),
+        dt.strftime("%I:%M:%S %p"),
+        dt.strftime("%Y-%m-%d %I:%M %p"),
+    )
+
+
 def init_db():
     conn = sqlite3.connect(DB_PATH)
     c = conn.cursor()
@@ -102,6 +120,38 @@ def init_db():
     if "scraped_time" not in cols:
         c.execute("ALTER TABLE seat_snapshots ADD COLUMN scraped_time TEXT")
     conn.commit()
+
+    # Backfill old ISO-8601 scraped_at values into the requested display format.
+    try:
+        rows = c.execute(
+            """
+            SELECT id, scraped_at
+            FROM seat_snapshots
+            WHERE scraped_at LIKE '%T%'
+               OR scraped_date IS NULL
+               OR scraped_time IS NULL
+            """
+        ).fetchall()
+        updates = []
+        for row_id, raw_scraped_at in rows:
+            formatted = _format_scraped_fields(raw_scraped_at)
+            if not formatted:
+                continue
+            scraped_date, scraped_time, scraped_at_fmt = formatted
+            updates.append((scraped_date, scraped_time, scraped_at_fmt, row_id))
+        if updates:
+            c.executemany(
+                """
+                UPDATE seat_snapshots
+                SET scraped_date = ?, scraped_time = ?, scraped_at = ?
+                WHERE id = ?
+                """,
+                updates,
+            )
+            conn.commit()
+            log.info(f"Backfilled scrape timestamp format for {len(updates)} rows")
+    except sqlite3.Error as exc:
+        log.warning(f"Skipped timestamp backfill due to SQLite error: {exc}")
     conn.close()
     log.info(f"DB ready at {DB_PATH}")
 
