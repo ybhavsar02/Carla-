@@ -318,7 +318,7 @@ def run_scrape(days_ahead=1):
     all_records = []
     dates = [
         (datetime.now(IST_TZ) + timedelta(days=i)).strftime("%d-%m-%Y")
-        for i in range(1, days_ahead + 1)
+        for i in range(0, days_ahead + 1)
     ]
 
     for from_city, to_city in ROUTES:
