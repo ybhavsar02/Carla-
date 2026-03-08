@@ -23,3 +23,11 @@ jobs:
 
       - name: Run script
         run: python scraper.py
+
+        - name: Commit and push DB updates
+          run: |
+          	git config --global user.email "ybhavsar02@gmail.com"
+          	git remote add origin https://github.com/ybhavsar02/Carla-.git
+          	git init
+          	git add .
+          	git commit -m "First commit"
