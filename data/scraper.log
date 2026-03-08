@@ -82,3 +82,5 @@
 2026-03-08 01:25:01,241 [INFO] Saved 328 seat records
 2026-03-08 01:25:01,241 [INFO] Total seat rows saved: 328
 2026-03-08 14:56:57,306 [INFO] Backfilled scrape timestamp format for 2952 rows
+2026-03-08 15:11:54,683 [WARNING] Skipped timestamp backfill due to SQLite error: disk I/O error
+2026-03-08 15:11:54,685 [INFO] DB ready at F:\project\Redbus\data\fares.db
