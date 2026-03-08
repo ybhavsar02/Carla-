@@ -11,6 +11,7 @@ import sqlite3
 import time
 from datetime import datetime, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -18,6 +19,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 DATA_DIR = PROJECT_ROOT / "data"
 DB_PATH = DATA_DIR / "fares.db"
 BASE_URL = "https://shrisairambus.com"
+IST_TZ = ZoneInfo("Asia/Kolkata")
 
 ROUTES = [("Pune", "Jalgaon")]
 
@@ -256,8 +258,8 @@ def fetch_seat_rows(session: requests.Session, route: dict, from_city: str, to_c
         return []
 
     seat_data = json.loads(seat_resp["d"]["data"]).get("data", [])
-    now = datetime.now()
-    scraped_at = now.isoformat()
+    now = datetime.now(IST_TZ)
+    scraped_at = now.isoformat(timespec="seconds")
     scraped_date = now.strftime("%Y-%m-%d")
     scraped_time = now.strftime("%H:%M:%S")
     start_time = _pick_route_time(route, ("CityTime", "RouteTime", "StartTime", "DepartureTime", "BoardingTime"))
@@ -314,7 +316,10 @@ def run_scrape(days_ahead=1):
         return []
 
     all_records = []
-    dates = [(datetime.now() + timedelta(days=i)).strftime("%d-%m-%Y") for i in range(1, days_ahead + 1)]
+    dates = [
+        (datetime.now(IST_TZ) + timedelta(days=i)).strftime("%d-%m-%Y")
+        for i in range(1, days_ahead + 1)
+    ]
 
     for from_city, to_city in ROUTES:
         key = (_normalize_city(from_city), _normalize_city(to_city))

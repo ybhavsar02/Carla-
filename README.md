@@ -4,8 +4,8 @@
 
 ## Project Structure
 
-
 The scraper:
+
 1. Sends this GET request with real browser headers
 2. Parses the HTML response for fare data
 3. Stores each price snapshot to SQLite with timestamp
@@ -31,6 +31,7 @@ uvicorn backend.main:app --reload --port 8080
 # API docs
 open http://localhost:8000/docs
 ```
+
 ## First Run: Selector Debug
 
 ## Cron Setup (Run 4× daily)
@@ -38,4 +39,5 @@ open http://localhost:8000/docs
 ```cron
 0 6,10,14,22 * * * cd /path/to/busfaretracker && python scraper/scraper.py >> /tmp/scraper.log 2>&1
 ```
+
 ---
