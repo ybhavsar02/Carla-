@@ -259,7 +259,7 @@ def fetch_seat_rows(session: requests.Session, route: dict, from_city: str, to_c
 
     seat_data = json.loads(seat_resp["d"]["data"]).get("data", [])
     now = datetime.now(IST_TZ)
-    scraped_at = now.isoformat(timespec="seconds")
+    scraped_at = now.strftime("%Y-%m-%d %I:%M %p")
     scraped_date = now.strftime("%Y-%m-%d")
     scraped_time = now.strftime("%I:%M:%S %p")
     start_time = _pick_route_time(route, ("CityTime", "RouteTime", "StartTime", "DepartureTime", "BoardingTime"))
