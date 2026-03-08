@@ -21,7 +21,16 @@ DB_PATH = DATA_DIR / "fares.db"
 BASE_URL = "https://shrisairambus.com"
 IST_TZ = ZoneInfo("Asia/Kolkata")
 
-ROUTES = [("Pune", "Jalgaon")]
+ROUTES = [
+    ("Pune", "Aurangabad"),
+    ("Pune", "Dhule"),
+    ("Dhule", "Pune"),
+    ("Pune", "Malkapur"),
+    ("Buldana", "Pune"),
+    ("Pune", "Jalgaon"),
+    ("Pune", "Bhusawal"),
+    ("Dhule", "Mumbai"),
+]
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
